@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../ButtonComponent";
+import { heroContents } from "../../constants/display";
 import {
   HeroContainer,
   HeroBg,
@@ -22,14 +23,17 @@ function HeroSection() {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src="/videos/video.mp4" type="video/mp4" />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={heroContents.video}
+          type="video/mp4"
+        />
       </HeroBg>
       <HeroContent>
-        <HeroHeader>Welcome To Razbotics</HeroHeader>
-        <HeroParagraph>
-          One stop solution for your web and mobile app development, see
-          services now
-        </HeroParagraph>
+        <HeroHeader>{heroContents.headline}</HeroHeader>
+        <HeroParagraph>{heroContents.subtitle}</HeroParagraph>
         <HeroBtnContainer>
           <Button
             to="services"
@@ -38,7 +42,7 @@ function HeroSection() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            {heroContents.btnLabel} {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnContainer>
       </HeroContent>

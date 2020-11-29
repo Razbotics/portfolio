@@ -1,17 +1,19 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import colors from "../../constants/colors";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${colors.black};
   height: 80px;
-  margin-top: 0px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -24,12 +26,11 @@ export const NavContainer = styled.div`
   height: 80px;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
-  z-index: 10;
+  max-width: 1400px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
-  color: #fff;
+  color: ${colors.white};
   justify-content: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -51,7 +52,7 @@ export const NavIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${colors.white};
   }
 `;
 
@@ -60,7 +61,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
 
   @media screen and (max-width: 760px) {
     display: none;
@@ -71,7 +71,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkScroll)`
-  color: #fff;
+  color: ${colors.white};
   display: flex;
   font-size: 1.2rem;
   align-items: center;
@@ -80,9 +80,8 @@ export const NavLink = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
 
-  &.active,
-  :hover {
-    border-bottom: 3px solid #01bf71;
+  &.active {
+    border-bottom: 3px solid ${colors.primary};
     transition: all 0.2s ease-in-out;
   }
 `;
@@ -97,10 +96,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${colors.primary};
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: ${colors.black};
   font-size: 1.1rem;
   outline: none;
   border: none;
@@ -110,7 +109,7 @@ export const NavBtnLink = styled(LinkRouter)`
 
   &:hover {
     transition: all 0.5s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${colors.white};
+    color: ${colors.black};
   }
 `;

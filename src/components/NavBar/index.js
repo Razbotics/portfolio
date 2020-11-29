@@ -22,13 +22,13 @@ function NavBar({ toggle }) {
         </NavIcon>
         <NavMenu>
           <NavItem>
+            <NavLink to="about">About</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink to="projects">Projects</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="services">Services</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="about">About</NavLink>
           </NavItem>
         </NavMenu>
         <NavBtn>

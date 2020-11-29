@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import colors from "../../constants/colors";
 
 export const ToggleBarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: ${colors.black};
   display: grid;
   align-items: center;
   top: 0;
@@ -33,7 +34,7 @@ export const Icon = styled.div`
 `;
 
 export const ToggleBarWrapper = styled.div`
-  color: #fff;
+  color: ${colors.white};
 `;
 
 export const ToggleBarMenu = styled.ul`
@@ -56,7 +57,7 @@ export const ToggleBarLink = styled(LinkScroll)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #fff;
+  color: ${colors.white};
   cursor: pointer;
 
   &:hover {
@@ -72,10 +73,10 @@ export const ToggleBtn = styled.div`
 
 export const ToggleBtnLink = styled(LinkRouter)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${colors.primary};
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: ${colors.black};
   font-size: 16px;
   outline: none;
   border: none;
@@ -85,7 +86,7 @@ export const ToggleBtnLink = styled(LinkRouter)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${colors.white};
+    color: ${colors.black};
   }
 `;
