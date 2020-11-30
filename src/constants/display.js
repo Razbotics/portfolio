@@ -6,8 +6,8 @@ export const heroContents = {
   video: "/videos/video.mp4",
 };
 
-export const displayContents = {
-  about: {
+export const displayContents = [
+  {
     id: "about",
     lightBg: false,
     primaryTopline: true,
@@ -25,7 +25,7 @@ export const displayContents = {
     alt: "about",
     imgStart: true,
   },
-  projects: {
+  {
     id: "projects",
     lightBg: true,
     primaryTopline: true,
@@ -42,4 +42,29 @@ export const displayContents = {
     alt: "project",
     imgStart: false,
   },
-};
+];
+
+export const displayService = [
+  {
+    id: "service1",
+    icon: "/images/projects.svg",
+    title: "Web App",
+    subtitle: `Get modern tailored website for 
+      your business or startup at low cost`,
+    route: "/",
+  },
+  {
+    id: "service2",
+    icon: "/images/projects.svg",
+    title: "Mobile App",
+    subtitle: "We help reduce your fees and increase overall revenue",
+    route: "/",
+  },
+  {
+    id: "service3",
+    icon: "/images/projects.svg",
+    title: "Full Stack",
+    subtitle: "We help reduce your fees and increase overall revenue",
+    route: "/",
+  },
+];

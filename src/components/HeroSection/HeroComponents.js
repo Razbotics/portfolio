@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 1000px;
   position: relative;
   z-index: 1;
 
@@ -27,6 +27,10 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 800px;
   }
 `;
 
