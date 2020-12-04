@@ -1,5 +1,5 @@
 export const heroContents = {
-  headline: "Welcome to razbotics",
+  headline: "Welcome to Razbotics",
   subtitle: `One stop solution for your web and mobile 
   app development, explore now`,
   btnLabel: "Get Started",
