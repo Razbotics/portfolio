@@ -3,7 +3,4 @@ services:
   portfolio:
     image: portfolio:latest
     ports:
-      - 443:3443
       - 80:80
-    volumes:
-      - /home/ubuntu/certs/razbotics.com:/etc/nginx/certs
