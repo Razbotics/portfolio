@@ -10,11 +10,6 @@ COPY ./public /app/public
 RUN npm install
 RUN npm run build
 
-<<<<<<< HEAD
-FROM nginx
-COPY --from=build /app/build /usr/share/nginx/html
-=======
 FROM razbotics/nginx-ssl:1.0
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
->>>>>>> origin/master
