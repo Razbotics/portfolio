@@ -1,8 +1,9 @@
-version: "3.0"
-
+version: "3"
 services:
-  nginx:
-    image: portfolio:latest
+  portfolio:
+    image: razbotics/portfolio:latest
     ports:
+      - 443:3443
       - 80:80
-      - 443:443
+    volumes:
+      - /etc/letsencrypt/live/razbotics.com:/etc/nginx/certs
