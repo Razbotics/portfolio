@@ -1,7 +1,7 @@
 version: "3"
 services:
   portfolio:
-    image: razbotics/portfolio:latest
+    image: portfolio:latest
     ports:
       - 443:3443
       - 80:80
