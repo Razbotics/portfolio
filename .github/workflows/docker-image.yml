@@ -39,4 +39,5 @@ jobs:
               User ubuntu
               IdentityFile ~/.ssh/id_rsa
       - name: rsync over ssh
+        run: ls -la
         run: ./deploy.sh
