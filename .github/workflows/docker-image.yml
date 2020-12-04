@@ -39,4 +39,9 @@ jobs:
               User ubuntu
               IdentityFile ~/.ssh/id_rsa
       - name: rsync over ssh
-        run: ls -la
+        run: ssh server
+          "
+          docker container rm portfolio -f &&
+          docker pull razbotics/portfolio:latest &&
+          docker run --name portfolio -d -p 3000:80 razbotics/portfolio:latest
+          "
