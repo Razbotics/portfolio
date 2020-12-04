@@ -3,7 +3,4 @@ services:
   portfolio:
     image: razbotics/portfolio:latest
     ports:
-      - 443:3443
-      - 80:80
-    volumes:
-      - /etc/letsencrypt/live/razbotics.com:/etc/nginx/certs
+      - 3000:80
