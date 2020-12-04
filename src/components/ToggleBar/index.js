@@ -18,14 +18,14 @@ function ToggleBar({ isOpen, toggle }) {
       </Icon>
       <ToggleBarWrapper>
         <ToggleBarMenu>
+          <ToggleBarLink onClick={toggle} to="about">
+            About
+          </ToggleBarLink>
           <ToggleBarLink onClick={toggle} to="projects">
             Projects
           </ToggleBarLink>
-          <ToggleBarLink onClick={toggle} to="service">
+          <ToggleBarLink onClick={toggle} to="services">
             Services
-          </ToggleBarLink>
-          <ToggleBarLink onClick={toggle} to="about">
-            About
           </ToggleBarLink>
         </ToggleBarMenu>
         <ToggleBtn>

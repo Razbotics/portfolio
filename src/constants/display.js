@@ -47,24 +47,25 @@ export const displayContents = [
 export const displayService = [
   {
     id: "service1",
-    icon: "/images/projects.svg",
-    title: "Web App",
-    subtitle: `Get modern tailored website for 
-      your business or startup at low cost`,
+    icon: "/images/web-service.svg",
+    title: "Websites",
+    subtitle: `Modern tailored website for 
+      your business or startup`,
     route: "/",
   },
   {
     id: "service2",
-    icon: "/images/projects.svg",
+    icon: "/images/mobile-service.svg",
     title: "Mobile App",
-    subtitle: "We help reduce your fees and increase overall revenue",
+    subtitle: `Have an app idea? Get it developed fast`,
     route: "/",
   },
   {
     id: "service3",
-    icon: "/images/projects.svg",
+    icon: "/images/full-stack.svg",
     title: "Full Stack",
-    subtitle: "We help reduce your fees and increase overall revenue",
+    subtitle: `Get a full project infrastructure developed 
+        at low rates`,
     route: "/",
   },
 ];

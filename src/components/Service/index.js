@@ -15,7 +15,7 @@ function Service({ contents }) {
       <ServiceHeader>Services</ServiceHeader>
       <ServiceWrapper>
         {contents.map((content) => (
-          <ServiceCard>
+          <ServiceCard key={content.id}>
             <ServiceIcon src={content.icon} />
             <ServiceCardTitle>{content.title}</ServiceCardTitle>
             <ServiceCardSubtitle>{content.subtitle}</ServiceCardSubtitle>

@@ -36,7 +36,7 @@ export const ServiceCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 15px;
-  max-height: 340px;
+  height: 340px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
@@ -47,6 +47,15 @@ export const ServiceCard = styled.div`
   }
   &:not(:hover) {
     transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 1000px) {
+    &:hover {
+      transform: scale(1);
+      cursor: pointer;
+    }
+    &:not(:hover) {
+    }
   }
 `;
 

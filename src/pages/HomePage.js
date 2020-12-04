@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import NavBar from "../components/NavBar";
@@ -22,6 +23,7 @@ function HomePage() {
         <InfoSection key={content.id} {...content} />
       ))}
       <Service contents={displayService} />
+      <Footer />
     </>
   );
 }
