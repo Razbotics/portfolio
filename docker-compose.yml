@@ -6,4 +6,4 @@ services:
       - 443:3443
       - 80:80
     volumes:
-      - /etc/letsencrypt/live/razbotics.com:/etc/nginx/certs
+      - /home/ubuntu/certs/razbotics.com:/etc/nginx/certs
