@@ -1,0 +1,8 @@
+version: "3.0"
+
+services:
+  nginx:
+    image: portfolio:latest
+    ports:
+      - 80:80
+      - 443:443
