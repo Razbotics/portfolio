@@ -34,4 +34,6 @@ jobs:
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: rsync over ssh
-        run: ./deploy.sh
+        run: ssh ubuntu@3.138.222.105 \
+          "mkdir test
+          "
