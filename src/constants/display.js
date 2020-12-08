@@ -6,6 +6,12 @@ export const heroContents = {
   video: "/videos/video.mp4",
 };
 
+export const aboutContents = {
+  video: "/videos/video.mp4",
+  profileImage: "/images/profile.jpeg",
+  header: "Hello, I' m Shubhankar Das",
+};
+
 export const displayContents = [
   {
     id: "about",
@@ -20,7 +26,7 @@ export const displayContents = [
     buttonLabel: "Know more",
     primaryButton: "true",
     darkBtnText: "true",
-    route: "/",
+    route: "/about-me",
     img: "/images/about.svg",
     alt: "about",
     imgStart: true,

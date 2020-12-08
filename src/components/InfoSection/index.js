@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonComponent";
+import { ButtonRouter } from "../ButtonComponent";
 import {
   InfoContainer,
   InfoWrapper,
@@ -42,7 +42,7 @@ function InfoSection({
               <Heading lightText={lightHeadline}>{headline}</Heading>
               <Subtitle lightText={lightDesc}>{description}</Subtitle>
               <BtnWrap>
-                <Button
+                <ButtonRouter
                   to={route}
                   smooth={true}
                   duration={500}
@@ -53,7 +53,7 @@ function InfoSection({
                   dark={darkBtnText}
                 >
                   {buttonLabel}
-                </Button>
+                </ButtonRouter>
               </BtnWrap>
             </TextWrapper>
           </Column1>
