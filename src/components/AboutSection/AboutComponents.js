@@ -7,7 +7,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
 
   padding: 0px 30px;
-  height: 1500px;
+  height: 1300px;
   position: relative;
   z-index: 1;
 
@@ -58,14 +58,13 @@ export const AboutContent = styled.div`
 
   z-index: 3;
   position: absolute;
-  padding: 8px 24px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.85);
   max-width: 1000px;
-  height: 1400px;
+  height: 1100px;
   border-radius: 30px;
   animation: 1.5s ease-in-out 0s 1 slideDown;
 
@@ -93,7 +92,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: ${colors.white};
+  color: ${({ darkText }) => (darkText ? colors.black : colors.white)};
   font-size: 44px;
   text-align: center;
 
@@ -155,5 +154,33 @@ export const ProfileName = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
     text-align: center;
+  }
+`;
+
+export const InfoContainer = styled.div`
+  width: 100%;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+`;
+
+export const InfoTags = styled.div`
+  width: 200px;
+  height: 70px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+  color: ${colors.white};
+  font-size: 25px;
+  text-align: center;
+  background-color: ${colors.primary};
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  :hover {
+    width: 300px;
+    background-color: ${colors.white};
+    color: ${colors.black};
   }
 `;

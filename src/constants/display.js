@@ -10,6 +10,12 @@ export const aboutContents = {
   video: "/videos/video.mp4",
   profileImage: "/images/profile.jpeg",
   header: "Hello, I' m Shubhankar Das",
+  abouts: [
+    { name: "Experience", description: "" },
+    { name: "Education", description: "" },
+    { name: "Skills", description: "" },
+    { name: "Hobbies", description: "" },
+  ],
 };
 
 export const displayContents = [
