@@ -44,9 +44,9 @@ function InfoSection({
               <BtnWrap>
                 <ButtonRouter
                   to={route}
-                  smooth={true}
+                  smooth="true"
                   duration={500}
-                  spy={true}
+                  spy="true"
                   exact="true"
                   offset={-80}
                   primary={primaryButton}
