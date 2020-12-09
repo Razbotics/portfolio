@@ -3,7 +3,6 @@ import colors from "../../constants/colors";
 import { FaTimes } from "react-icons/fa";
 
 export const InfoModalContainer = styled.div`
-  margin-top: 400px;
   position: absolute;
   padding: 10px;
   width: 100%;
@@ -13,7 +12,19 @@ export const InfoModalContainer = styled.div`
   border-radius: 0 50px;
   transition: 0.5s ease-in-out;
 
-  top: ${({ hide }) => (hide ? "100%" : `0`)};
+  @media screen and (max-width: 768px) {
+    border-radius: 0px;
+    top: ${({ hide }) => (hide ? "100%" : `50%`)};
+    height: 600px;
+  }
+
+  @media screen and (max-width: 480px) {
+    border-radius: 0px;
+    top: ${({ hide }) => (hide ? "100%" : `45%`)};
+    height: 600px;
+  }
+
+  top: ${({ hide }) => (hide ? "100%" : `40%`)};
   transform: ${({ hide }) => (hide ? "scale(0)" : "scale(1)")};
 `;
 
