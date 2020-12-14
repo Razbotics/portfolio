@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   align-items: center;
   padding: 0 30px;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -27,10 +27,6 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 700px;
   }
 `;
 
@@ -54,7 +50,6 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-height: 1200px;
   position: absolute;
   padding: 8px 24px;
   display: flex;

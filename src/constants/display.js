@@ -29,7 +29,7 @@ export const displayContents = [
     headline: "Know me better",
     description: `Want to hire me for your work? 
       Then you should definitely check my bio!`,
-    buttonLabel: "Know more",
+    buttonLabel: "See Bio",
     primaryButton: "true",
     darkBtnText: "true",
     route: "/about-me",
