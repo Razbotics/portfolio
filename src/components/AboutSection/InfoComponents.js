@@ -39,11 +39,11 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 20px;
 `;
 
 export const Title = styled.h1`
-  color: ${({ darkText }) => (darkText ? colors.black : colors.white)};
+  color: ${({ darkText }) => (darkText ? colors.primary : colors.white)};
   font-size: 44px;
   text-align: center;
 
@@ -66,4 +66,21 @@ export const CloseBtn = styled.div`
 export const CloseIcon = styled(FaTimes)`
   color: ${colors.black};
   font-size: 45px;
+`;
+
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 20px;
+`;
+
+export const Paragraph = styled.p`
+  color: ${colors.black};
+  font-size: 25px;
+  text-align: left;
+
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
 `;

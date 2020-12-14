@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../../constants/colors";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const AboutContainer = styled.div`
   background: ${colors.black};
@@ -7,7 +8,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
 
   padding: 0px 30px;
-  height: 1300px;
+  height: 110vh;
   position: relative;
   z-index: 1;
 
@@ -64,7 +65,7 @@ export const AboutContent = styled.div`
   align-items: center;
   background: rgba(0, 0, 0, 0.85);
   max-width: 1000px;
-  height: 1100px;
+  height: 100vh;
   border-radius: 30px;
   animation: 1.5s ease-in-out 0s 1 slideDown;
 
@@ -169,11 +170,11 @@ export const InfoTags = styled.div`
   height: 70px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  padding-top: 15px;
   margin-bottom: 40px;
   color: ${colors.white};
   font-size: 25px;
   text-align: center;
+  padding: 18px 0;
   background-color: ${colors.primary};
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -183,4 +184,10 @@ export const InfoTags = styled.div`
     background-color: ${colors.white};
     color: ${colors.black};
   }
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  float: right;
+  font-size: 30px;
+  margin-right: 5px;
 `;

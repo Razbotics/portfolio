@@ -14,6 +14,7 @@ import {
   ProfileName,
   InfoContainer,
   InfoTags,
+  ArrowRight,
 } from "./AboutComponents";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -57,6 +58,7 @@ function AboutSection() {
               onClick={() => setVisibleContainer(about.name)}
             >
               {about.name}
+              <ArrowRight />
             </InfoTags>
           ))}
         </InfoContainer>

@@ -9,7 +9,7 @@ export const heroContents = {
 export const aboutContents = {
   video: "/videos/video.mp4",
   profileImage: "/images/profile.jpeg",
-  header: "Hello, I' m Shubhankar Das",
+  header: "Hi, I'm Shubhankar",
   abouts: [
     { name: "Experience", description: "" },
     { name: "Education", description: "" },

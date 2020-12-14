@@ -10,7 +10,7 @@ export const ServiceContainer = styled.div`
   background: ${colors.black};
 
   @media screen and (max-width: 1000px) {
-    height: 1300px;
+    height: 1400px;
   }
 `;
 

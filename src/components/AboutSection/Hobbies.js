@@ -5,6 +5,8 @@ import {
   InfoModalContainer,
   HeaderContainer,
   TitleContainer,
+  Paragraph,
+  Content,
 } from "./InfoComponents";
 
 function Hobbies({ hidden, onClose }) {
@@ -18,6 +20,12 @@ function Hobbies({ hidden, onClose }) {
           <CloseIcon />
         </CloseBtn>
       </HeaderContainer>
+      <Content>
+        <Paragraph>
+          My hobbies are travelling, photography and ofcourse gaining new
+          skills!
+        </Paragraph>
+      </Content>
     </InfoModalContainer>
   );
 }

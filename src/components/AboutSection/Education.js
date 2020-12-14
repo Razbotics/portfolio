@@ -5,6 +5,8 @@ import {
   InfoModalContainer,
   HeaderContainer,
   TitleContainer,
+  Content,
+  Paragraph,
 } from "./InfoComponents";
 
 function Education({ hidden, onClose }) {
@@ -18,6 +20,13 @@ function Education({ hidden, onClose }) {
           <CloseIcon />
         </CloseBtn>
       </HeaderContainer>
+      <Content>
+        <Paragraph>
+          I studied Mechanical Engineering from University of Mumbai affiliated
+          college Fr. C. Rodrigues Institute of Technology, Vashi from year 2015
+          - 2019.
+        </Paragraph>
+      </Content>
     </InfoModalContainer>
   );
 }

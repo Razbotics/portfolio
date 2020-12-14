@@ -41,6 +41,11 @@ function HeroSection() {
             dark="true"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             {heroContents.btnLabel} {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

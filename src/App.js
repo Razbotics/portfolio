@@ -6,7 +6,7 @@ import AboutMePage from "./pages/AboutMePage";
 function App() {
   return (
     <Router>
-      <Route exact path="/about-me" component={AboutMePage} />
+      <Route path="/about-me" component={AboutMePage} />
       <Route exact path="/" component={HomePage} />
     </Router>
   );
