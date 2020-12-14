@@ -11,6 +11,7 @@ import {
   NavBtnLink,
 } from "./NavbarComponents";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 function NavBar({ toggle }) {
   const [scrollView, setScrollView] = useState(false);
@@ -24,22 +25,58 @@ function NavBar({ toggle }) {
     window.addEventListener("scroll", changeNav);
   }, []);
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <Nav scrollNav={scrollView}>
       <NavContainer>
-        <NavLogo to="/">razbotics</NavLogo>
+        <NavLogo to="/" onClick={toggleHome}>
+          razbotics
+        </NavLogo>
         <NavIcon onClick={toggle}>
           <FaBars />
         </NavIcon>
         <NavMenu>
           <NavItem>
-            <NavLink to="about">About</NavLink>
+            <NavLink
+              to="about"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="projects">Projects</NavLink>
+            <NavLink
+              to="projects"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Projects
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="services">Services</NavLink>
+            <NavLink
+              to="services"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Services
+            </NavLink>
           </NavItem>
         </NavMenu>
         <NavBtn>

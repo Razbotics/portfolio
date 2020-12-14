@@ -82,7 +82,6 @@ export const NavLink = styled(LinkScroll)`
 
   &.active {
     border-bottom: 3px solid ${colors.primary};
-    transition: all 0.2s ease-in-out;
   }
 `;
 
