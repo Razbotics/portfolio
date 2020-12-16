@@ -6,11 +6,8 @@ export const AboutContainer = styled.div`
   background: ${colors.black};
   display: flex;
   justify-content: center;
-
   padding: 0px 30px;
-  height: 110vh;
-  position: relative;
-  z-index: 1;
+  height: 1500px;
 
   :before {
     content: "";
@@ -19,18 +16,17 @@ export const AboutContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    height: 1500px;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.95) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
   }
 `;
 
 export const AboutBg = styled.div`
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -59,21 +55,20 @@ export const AboutContent = styled.div`
 
   z-index: 3;
   position: absolute;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.85);
   max-width: 1000px;
-  height: 100vh;
+  height: 1000px;
   border-radius: 30px;
   animation: 1.5s ease-in-out 0s 1 slideDown;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 0px;
-    margin-top: 0px;
     border-radius: 0px;
+    height: 1100px;
   }
 `;
 
