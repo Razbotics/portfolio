@@ -6,6 +6,11 @@ function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [desc, setDesc] = useState("");
+
+  const isValid = () => {
+    return name && email && email.includes("@") && email.endsWith(".com");
+  };
+
   return (
     <>
       <Form.Bg>
@@ -30,7 +35,7 @@ function ContactPage() {
               value={desc}
               onChange={({ target }) => setDesc(target.value)}
             />
-            <Form.Submit disabled={!name || !email} type="submit">
+            <Form.Submit disabled={!isValid()} type="submit">
               Submit
             </Form.Submit>
           </Form.Base>

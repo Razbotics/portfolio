@@ -81,6 +81,6 @@ export const Paragraph = styled.p`
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 `;

@@ -112,9 +112,17 @@ export const Submit = styled.button`
   border: 0;
   color: white;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
-  &:not(disabled):hover {
+  &:hover {
+    transition: all 0.2s ease-in-out;
     background: ${colors.white};
     color: ${colors.black};
+  }
+
+  &:disabled {
+    background: ${colors.primary};
+    color: ${colors.white};
+    opacity: 0.8;
   }
 `;

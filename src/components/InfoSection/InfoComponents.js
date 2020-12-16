@@ -87,7 +87,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   color: ${({ lightText }) => (lightText ? colors.white : colors.black)};
 `;
 
