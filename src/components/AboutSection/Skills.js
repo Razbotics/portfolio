@@ -22,13 +22,14 @@ function Skills({ hidden, onClose }) {
       </HeaderContainer>
       <Content>
         <Paragraph>
-          Currently, I have programming skills in JavaScript and Python.
+          Currently, I have programming skills in both JavaScript and Python.
         </Paragraph>
         <br />
         <Paragraph>Comming to tech skills,</Paragraph>
         <Paragraph>
-          For Frontend I have skills in React and React Native and Node.js for
-          backend.
+          For Frontend I have skills in React, React Native and Angular. For
+          Backend I have skills in Node.js, MongoDB, Express, Python Flask and
+          aiohttp libraries.
         </Paragraph>
         <Paragraph>
           Apart from it, I have worked with DevOps, AWS and cloud computing

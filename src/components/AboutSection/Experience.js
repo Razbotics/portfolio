@@ -28,9 +28,9 @@ function Experience({ hidden, onClose }) {
         </Paragraph>
         <br />
         <Paragraph>
-          My work here primarily is to develop backend applications but I also
-          contribute to frontend when needed. I also have experience in
-          implementing DevOps practices as well as Cloud Computing.
+          My work here primarily is to develop Full Stack applications. I also
+          have experience in implementing DevOps practices as well as Cloud
+          Engineering in AWS.
         </Paragraph>
       </Content>
     </InfoModalContainer>

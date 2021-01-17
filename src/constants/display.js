@@ -17,6 +17,30 @@ export const aboutContents = {
     { name: "Hobbies", description: "" },
   ],
 };
+export const ProjectsContent = [
+  {
+    name: "Netflix Clone",
+    desc: `A similar looking netflix website with 
+    authentication using FIrebase as its backend`,
+    videoUrl: "videos/netflix_clone.mp4",
+    videoLeft: true,
+  },
+  {
+    name: "Chat App",
+    desc: `Simple React app for real time chatting with 
+    Authentication using Firebase as its backend
+    `,
+    videoUrl: "videos/chat_app.mp4",
+    videoLeft: false,
+  },
+  {
+    name: "Done-With-It",
+    desc: `This is a mobile app for selling used items built with React Native 
+    with node.js as its backend`,
+    videoUrl: "videos/done_with_it.mp4",
+    videoLeft: true,
+  },
+];
 
 export const displayContents = [
   {
@@ -49,7 +73,7 @@ export const displayContents = [
     Chat app and many more! Want to see them?`,
     buttonLabel: "Yes, Show me",
     primaryButton: "true",
-    route: "/",
+    route: "/projects",
     img: "/images/projects.svg",
     alt: "project",
     imgStart: false,
