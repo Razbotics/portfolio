@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ProjectComponent,
   HeaderComponent,
@@ -6,6 +6,9 @@ import {
 import { ProjectsContent } from "../constants/display";
 
 function ProjectsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeaderComponent />
